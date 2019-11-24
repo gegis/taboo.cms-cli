@@ -1,0 +1,42 @@
+{
+  "name": "@taboo/cms-cli",
+  "version": "1.0.0",
+  "description": "Taboo CMS CLI",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp buildAndWatch",
+    "build": "./node_modules/.bin/gulp build",
+    "buildAndWatch": "./node_modules/.bin/gulp buildAndWatch",
+    "lint": "./node_modules/.bin/gulp lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "install": "./index.js install"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "cms",
+    "headless",
+    "decoupled",
+    "api",
+    "koa",
+    "react"
+  ],
+  "author": "taboo.solutions",
+  "license": "ISC",
+  "homepage": "http://taboo.solutions",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gegis/taboo.cms-cli.git"
+  },
+  "dependencies": {
+    "@taboo/cms": "^1.0.0",
+    "colorprint": "^6.1.1",
+    "enquirer": "^2.3.2",
+    "prettier": "^1.19.1",
+    "shelljs": "^0.8.3",
+    "yargs": "^15.0.2"
+  }
+}
