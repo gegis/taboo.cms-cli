@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "install": "./index.js install"
+    "install": "./index.js"
   },
   "pre-commit": [
     "lint"
