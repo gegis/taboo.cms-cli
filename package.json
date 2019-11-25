@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "install": "./index.js"
+    "taboo-cms-cli": "./index.js"
   },
   "pre-commit": [
     "lint"
